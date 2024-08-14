@@ -3,10 +3,11 @@ import styled from "styled-components";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-import img1 from "../assets/images/Rio.jpeg";
-import img2 from "../assets/images/Noa.jpeg";
-import img3 from "../assets/images/Chihiro.jpg";
-import img4 from "../assets/images/Asuma.Toki.600.4067982.jpg";
+import img1 from "../assets/images/seminarMillenium.jpeg";
+import img2 from "../assets/images/veritas.webp";
+import img3 from "../assets/images/cnc.webp";
+import img4 from "../assets/images/SPTF_Logo.webp";
+import img5 from "../assets/images/Game_Dev_Icon.webp";
 
 const Section = styled.section`
   min-height: 100vh;
@@ -88,7 +89,7 @@ const Product = ({ img, title = " " }) => {
   return (
     <Item>
       <img width="400" height="600" src={img} alt={title}></img>
-      <h2>{title}</h2>
+      <h2 style={{ paddingTop: "32px" }}>{title}</h2>
     </Item>
   );
 };
@@ -161,10 +162,11 @@ const Akademi = () => {
       </Title>
 
       <Container ref={ScrollingRef}>
-        <Product img={img1} title="Tsukatsuki Rio" />
-        <Product img={img2} title="Ushio Noa" />
-        <Product img={img3} title="Kagami Chihiro" />
-        <Product img={img4} title="Asuma Toki" />
+        <Product img={img1} title="Seminar" />
+        <Product img={img2} title="Veritas" />
+        <Product img={img3} title="Cleaning&Clearing(C&C)" />
+        <Product img={img4} title="Paranormal Affairs Department" />
+        <Product img={img5} title="Game Development Department" />
       </Container>
 
       <Text data-scroll data-scroll-speed="-4">
