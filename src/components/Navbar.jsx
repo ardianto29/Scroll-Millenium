@@ -83,7 +83,7 @@ const Navbar = () => {
       click={click}
       initial={{ y: "-100%" }}
       animate={{ y: 0 }}
-      transition={{ duration: 3, delay: 3 }}>
+      transition={{ duration: 2, delay: 5 }}>
       <MenuItems
         drag="y"
         dragConstraints={{ top: 0, bottom: 70 }}

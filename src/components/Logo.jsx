@@ -38,7 +38,7 @@ const textVariants = {
   visible: {
     opacity: 1,
     x: -5,
-    transition: { duration: 2, delay: 2, ease: "easeInOut" }, // Moved transition here
+    transition: { duration: 2, delay: 5, ease: "easeInOut" }, // Moved transition here
   },
 };
 
@@ -47,7 +47,7 @@ const pathVariants = {
   visible: {
     opacity: 1,
     pathLength: 1,
-    transition: { duration: 2, ease: "easeInOut" }, // Moved transition here
+    transition: { duration: 2, delay: 3, ease: "easeInOut" }, // Moved transition here
   },
 };
 

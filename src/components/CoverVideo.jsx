@@ -70,7 +70,7 @@ const container = {
   show: {
     opacity: 1,
 
-    transition: { delayChildren: 2, staggerChildren: 0.3 }, // Moved transition here
+    transition: { delayChildren: 5, staggerChildren: 0.3 }, // Moved transition here
   },
 };
 
