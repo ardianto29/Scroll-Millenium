@@ -4,6 +4,7 @@ import { dark } from "./styles/Themes";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useRef } from "react";
 import "locomotive-scroll/dist/locomotive-scroll.css";
+import React, { useState, useEffect } from "react";
 
 import Home from "./sections/Home";
 import { AnimatePresence } from "framer-motion";
@@ -13,9 +14,18 @@ import Name from "./sections/Name";
 import Banner from "./sections/Banner";
 import Akademi from "./sections/Akademi";
 import Footer from "./sections/Footer";
+import Loader from "./components/Loader";
 
 function App() {
   const containerRef = useRef(null);
+
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 3000);
+  }, []);
 
   return (
     <>
@@ -34,6 +44,7 @@ function App() {
             ]
           }
           containerRef={containerRef}>
+          <AnimatePresence>{loaded ? null : <Loader />}</AnimatePresence>
           <ScrollTriggerProxy />
           <AnimatePresence>
             <main className="App" data-scroll-container ref={containerRef}>
