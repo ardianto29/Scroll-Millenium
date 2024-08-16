@@ -64,22 +64,25 @@ const BannerComponent = styled.h1`
 const Banner = () => {
   return (
     <Section>
-      <Container id="up">
+      <Container id="direction">
         <BannerComponent>
           <span
             data-scroll
             data-scroll-direction="horizontal"
             data-scroll-speed="8"
-            data-scroll-target="#up">
+            data-scroll-target="#direction">
             I am not speaking of likes or dislikes... only facts.
           </span>
         </BannerComponent>
-        <BannerComponent>
+        <BannerComponent
+          data-scroll
+          data-scroll-speed="-2"
+          data-scroll-target="#direction">
           <span
             data-scroll
             data-scroll-direction="horizontal"
             data-scroll-speed="-6"
-            data-scroll-target="#up">
+            data-scroll-target="#direction">
             Something tells me my girls are at it again...
           </span>
         </BannerComponent>
@@ -88,7 +91,7 @@ const Banner = () => {
             data-scroll
             data-scroll-direction="horizontal"
             data-scroll-speed="6"
-            data-scroll-target="#up">
+            data-scroll-target="#direction">
             Oh, do you need my help?
           </span>
         </BannerComponent>
@@ -97,16 +100,19 @@ const Banner = () => {
             data-scroll
             data-scroll-direction="horizontal"
             data-scroll-speed="-4"
-            data-scroll-target="#up">
+            data-scroll-target="#direction">
             I'm going to destroy you!
           </span>
         </BannerComponent>
-        <BannerComponent>
+        <BannerComponent
+          data-scroll
+          data-scroll-speed="6"
+          data-scroll-target="#direction">
           <span
             data-scroll
             data-scroll-direction="horizontal"
             data-scroll-speed="6"
-            data-scroll-target="#up">
+            data-scroll-target="#direction">
             I can see the Scenario to Victory!
           </span>
         </BannerComponent>
