@@ -38,6 +38,12 @@ const Container = styled(motion.div)`
         }
       }
     }
+
+    @media (max-width: 48em) {
+      svg {
+        width: 20vw;
+      }
+    }
 `;
 
 const textVariants = {
@@ -64,6 +70,10 @@ const Text = styled(motion.span)`
   padding-bottom: 2rem;
   margin-left: 0.5rem;
   margin-top: 3rem;
+
+  @media (max-width: 48em) {
+    font-size: ${(props) => props.theme.fontlg};
+  }
 `;
 
 const Loader = () => {

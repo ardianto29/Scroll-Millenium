@@ -35,6 +35,12 @@ function App() {
           options={{
             smooth: true,
             // ... all available Locomotive Scroll instance options
+            smartphone: {
+              smooth: true,
+            },
+            tablet: {
+              smooth: true,
+            },
           }}
           watch={
             [
